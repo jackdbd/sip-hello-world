@@ -29,8 +29,10 @@ PY_LIBRARY=word
 echo "Configure a private copy of SIP $SIP_VERSION for the python library '$PY_LIBRARY'"
 
 cd $SIP
+# See docs:
+# http://pyqt.sourceforge.net/Docs/sip4/using.html#building-a-private-copy-of-the-sip-module
 python configure.py \
-  --sip-module=$PY_LIBRARY.sip \
+  --sip-module $PY_LIBRARY.sip \
   --no-module
   
 echo "Compile SIP source files"
