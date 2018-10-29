@@ -1,3 +1,7 @@
 .vscode/
+
+hello_c/generated/*
+!hello_c/generated/README.md
+
 word_cpp/generated/*
 !word_cpp/generated/README.md
