@@ -50,7 +50,18 @@ word-sip   4.19.13
 In your virtualenv `site-packages` (e.g. `cd .virtualenvs/<YOUR-VIRTUALENV-NAME>/lib/python3.6/site-packages`) you should see `word_sip-4.19.13.dist-info`.
 
 
-## Wrapping the C++ library with SIP
+## Wrapping a C library with SIP
+
+```sh
+cd hello_c
+python configure.py --pyi
+cd generated
+make
+make install
+```
+
+
+## Wrapping a C++ library with SIP
 
 ```sh
 cd word_cpp
@@ -58,4 +69,11 @@ python configure.py --pyi
 cd generated
 make
 make install
+```
+
+Test that the compilation is working.
+
+```sh
+gcc src/main.c src/year_utils.c
+./a.out 1984
 ```
