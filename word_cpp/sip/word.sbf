@@ -1,3 +1,0 @@
-target = word
-sources = sipwordcmodule.cpp sipwordWord.cpp
-headers = sipAPIword.h

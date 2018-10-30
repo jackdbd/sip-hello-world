@@ -4,6 +4,8 @@ This repo shows how to take an existing C++ library, and make it available as Py
 
 Such extension modules are often called bindings for the library.
 
+:warning: :construction_worker: WORK IN PROGRESS :building_construction: :construction:
+
 
 ## Installation
 
@@ -31,18 +33,13 @@ Check that SIP is installed in the virtual environment.
 pip list
 ```
 
-You should see.
+You should see these packages.
 
 ```sh
 Package    Version
 ---------- -------
-appdirs    1.4.3  
-attrs      18.2.0 
-black      18.9b0 
-Click      7.0    
 pip        18.1   
 setuptools 40.5.0 
-toml       0.10.0 
 wheel      0.32.2 
 word-sip   4.19.13
 ```
